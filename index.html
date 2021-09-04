@@ -1,72 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misioneritas Argentina</title>
-    <!--Estilos-->
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misioneritas Argentina</title>
+  <!--Estilos-->
+  <link rel="stylesheet" href="css/estilo.css">
+  <!--Bootstrap Online-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <!-- ENCABEZADO-->
-    <header class = "encabezado">
-
-        <nav class="nav">
-            <ul class="nav_ul">
-                <li class = "nav__li"><a class ="nav__ul--link" href="index.html">Home</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="pages/historia.html">Historia</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="pages/material.html">Material</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="pages/galeria.html">Galeria</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <section class ="subencabezado">
-            <img class = "encabezado__logo" src="multimedia/LogoMisio.jpg" alt="logoMisioneritas">
-            <h1 class = "encabezado__titulo">Misioneritas Argentina</h1>
-        </section>
-
-    </header>
-    
-    <!--CUERPO-->
-    <section class="section">
-
-        <h2 class ="section__titulo">Bienvenidos</h2>
-        <p class="section__p">Misioneritas es una actividad pensada para niñas de entre <span class = "section__p--negrita"> 3 a 18 años</span>. Su fin es poder formar mujeres no solamente en el conocimiento de Dios sino también prepararlas para el futuro. 
-        </p>
-        <br>
-        <p class="section__p">El programa se divide en 6 clases dependiendo del rango etario:</p>
-        <ul>
-            <li class ="section__lista">Arco Iris: 3 a 4 años</li>
-            <br>
-            <li class ="section__lista">Rositas: 5 a 6 años</li>
-            <br>
-            <li class ="section__lista">Margaritas: 7 a 8 años</li>
-            <br>
-            <li class ="section__lista">Estrellas: 9 a 11 años</li>
-            <br>
-            <li class ="section__lista">JVM: 12 a 15 años</li>
-            <br>
-            <li class ="section__lista">Siervas: 15 a 18 años</li>
-        </ul>
-        <br>
-        <h3 class="section__titulo">Meta General:</h3>
-        <p class="section__p">El departamento de Misioneritas instruye, estimula e inspira a las niñas y jovencitas, en las esferas de: doctrina bíblica, servicio cristiano, creencias básicas de la iglesia, trabajo misionero, carácter y conducta cristianos. 
-            En resumen, discipulado bíblico integral para niñas y jovencitas.</p>
-        <br>
-    </section>
- 
-    <!--PIÉ DE PÁGINA-->
-    <footer class="footer">
-        <h5>Diseñado y Mantenido por: <span class = "footer__subtitulo">Maria Belen Rodriguez Schachtschneider</span></h5>
-        <div>
-            <a class = "footer__links" href="https://www.facebook.com/Misioneritas-Argentina-158161724336240/" target="_blank"><img src="multimedia/logo_facebook.png" alt="Facebook" width="50" height="50"></a>
-            <a class = "footer__links" href="https://www.instagram.com/misioneritasarg/?hl=es-la" target="_blank"><img src="multimedia/logo_instagram.png" alt="Instagram" width="50" height="50"></a>
-            <a class ="footer__links" href="mailto:misioneritasarg@gmail.com" target="_blank"><img src="multimedia/logo_e-mail.png" alt="Correo Electronica" width="50" height="50"></a>
+  <!-- ENCABEZADO-->
+  <header>
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="multimedia/LogoMisio.jpg" alt="logoMisioneritas" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="pages/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/material.html">Material</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </footer>   
+      </div>
+    </nav>
+
+    <!--CAROUSEL-->
+    <section>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="multimedia/LogoCarrusel.jpg" alt="logoMisioneritas">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="multimedia/Porque nos interesamos servimos.jpg" alt="lemaMisioneritas">
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!--CUERPO-->
+  <section class="section">
+    <h2 class="display-1">Bienvenidos</h2>
+    <p class="h2">Misioneritas es una actividad pensada para niñas de entre <strong> 3 a 18 años</strong>. Su fin es
+      poder formar mujeres no solamente en el conocimiento de Dios sino también prepararlas para el futuro.
+    </p>
+    <br>
+    <p class="h2">El programa se divide en 6 clases dependiendo del rango etario:</p>
+    <br>
+    <br>
+
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-6 order-lg-2 text-white img-fluid fondo fondo-fondo1" )></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2 class = "h2">Arco Iris: 3 a 4 años</h2>
+            <br>
+            <p class="lead mb-0">Un programa ameno, colorido y desafiante, desarrollado en doce unidades que comienzan
+              con la Unidad Arca y finalizan con la Unidad Azul-Celeste. Incluye un plan de premios sencillo y muy
+              llamativo, con requisitos que están dentro de las posibilidades de niños de esta edad.</p>
+          </div>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 text-white fondo fondo-fondo2" )></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2 class ="h2">Rositas: 5 a 6 años</h2>
+            <br>
+            <p class="lead mb-0">“Procuraré ser cuidadosa de lo que diga, donde vaya y lo que haga, tratando siempre de
+              ser lo mejor para mi Señor Jesús porque lo amo”. Esto es a lo que las Rositas se comprometen mientras
+              aprenden sobre una amplia gama de temas que constituyen las doce unidades.</p>
+          </div>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 order-lg-2 text-white fondo fondo-fondo3"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2 class = "h2">Margaritas: 7 a 8 años</h2>
+            <br>
+            <p class="lead mb-0">Con la promesa de: “Seré buena, servicial y feliz para que mi luz brille por Cristo”,
+              las Margaritas desarrollan un programa de ocho unidades.</p>
+          </div>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 order-lg-2 text-white fondo fondo-fondo4"></div>
+          <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+            <h2 class ="h2">Estrellas: 9 a 11 años</h2>
+            <br>
+            <p class="lead mb-0">Mientras suben “La escalera a las Estrellas”, las niñas aprenden historias bíblicas,
+              interceden por las misiones, participan en ministerios en grupo, realizan estudios especiales, y
+              complementan su preparación a través de las insignias de mérito.</p>
+          </div>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 order-lg-2 text-white fondo fondo-fondo5"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2 class ="h2">JVM: 12 a 15 años</h2>
+            <br>
+            <p class="lead mb-0">El programa para las jovencitas está diseñado en siete sesiones de trabajo: Historias
+              Bíblicas, Misiones, Doctrina, Tiempo de Trabajo, Ministerio en grupo, Insignias de Mérito y Actualidad
+              Juvenil.</p>
+          </div>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 order-lg-2 text-white fondo fondo-fondo6"></div>
+          <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+            <h2 class ="h2">Siervas: a partir de los 16 años</h2>
+            <br>
+            <p class="lead mb-0">Es un programa completamente diferente a los anteriores, debido a que uno empieza a
+              conocerse a una misma y, se aprende sobre el liderazgo en general</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <hr>
+    <section>
+      <p class="h2">El departamento de Misioneritas instruye, estimula e inspira a las niñas y jovencitas, en las
+        esferas de: doctrina bíblica, servicio cristiano, creencias básicas de la iglesia, trabajo misionero, carácter y
+        conducta cristianos.
+        En resumen, discipulado bíblico integral para niñas y jovencitas.</p>
+    </section>
+    <br>
+    <br>
+
+    <!--PIÉ DE PÁGINA-->
+    <footer class="footer text-center">
+      <br>
+      <div>
+        <a class="btn btn-outline-light btn-social mx-1"
+          href="https://www.facebook.com/Misioneritas-Argentina-158161724336240" target="_blank"><img
+            src="multimedia/fb_icon-icons.com_65434.png" alt="Facebook" width="40" height="40"></a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/misioneritasarg/?hl=es-la"
+          target="_blank"><img src="multimedia/instagram_f_icon-icons.com_65485.png" alt="Instagram" width="40"
+            height="40"></a>
+        <a class="btn btn-outline-light btn-social mx-1" href="mailto:misioneritasarg@gmail.com" target="_blank"><img
+            src="multimedia/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="Email"
+            width="40" height="40"></a>
+      </div>
+      <br>
+      <h5 class="lead">Diseñado y Mantenido por: Maria Belen Rodriguez Schachtschneider</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>

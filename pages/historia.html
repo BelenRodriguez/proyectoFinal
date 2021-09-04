@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia</title>
+  <!--Estilos-->
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!--Bootstrap Online-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
+
 <body>
-    
-    <!--ENCABEZADO-->
-    <header class = "encabezado">
-
-        <nav class="nav">
-            <ul class="nav_ul">
-                <li class = "nav__li"><a class ="nav__ul--link" href="../index.html">Home</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="../pages/historia.html">Historia</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="../pages/material.html">Material</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="../pages/galeria.html">Galeria</a></li>
-                <li class = "nav__li"><a class ="nav__ul--link" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <section class ="subencabezado">
-            <img class = "encabezado__logo" src="../multimedia/LogoMisio.jpg" alt="logoMisioneritas">
-            <h1 class = "encabezado__titulo">Misioneritas Argentina</h1>
-        </section>
-
-    </header>
-
-    <!--CUERPO-->
-    <section class="section">
-        <h2 class ="section__titulo">Nuestra historia</h2>
-        <p class="section__p">El Ministerio de Misioneritas fue creado en el mes de enero de 1956 en los Estados Unidos, como respuesta a las peticiones dadas al Concilio Misionero Femenil de las Asambleas de Dios por parte de jóvenes cristianas. Estas mujeres jóvenes tenían el deseo de tener un grupo misionero en donde pudieran convivir, encontrar amigas, crecer y desarrollarse en su vida espiritual y con base a las Sagradas Escrituras.</p>
-        <p class="section__p">Con el paso del tiempo, este ministerio se fue organizando en otros países de Lationamérica así como en otros países del mundo.</p>
-    </section>
-    
-    <!--PIÉ DE PÁGINA-->
-    <footer class="footer">
-        <h5>Diseñado y Mantenido por: <span class = "footer__subtitulo">Maria Belen Rodriguez Schachtschneider</span></h5>
-        <div>
-            <a class = "footer__links" href="https://www.facebook.com/Misioneritas-Argentina-158161724336240/" target="_blank"><img src="../multimedia/logo_facebook.png" alt="Facebook" width="50" height="50"></a>
-            <a class = "footer__links" href="https://www.instagram.com/misioneritasarg/?hl=es-la" target="_blank"><img src="../multimedia/logo_instagram.png" alt="Instagram" width="50" height="50"></a>
-            <a class ="footer__links" href="mailto:misioneritasarg@gmail.com" target="_blank"><img src="../multimedia/logo_e-mail.png" alt="Correo Electronica" width="50" height="50"></a>
+  <!--ENCABEZADO-->
+  <header>
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../multimedia/LogoMisio.jpg" alt="logoMisioneritas" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/material.html">Material</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </footer>    
+      </div>
+    </nav>
+  </header>
+
+  <!--CUERPO-->
+  <section class="section">
+    <h2 class="section__titulo">Nuestra historia</h2>
+    <p class="section__p">El Ministerio de Misioneritas fue creado en el mes de enero de 1956 en los Estados Unidos,
+      como respuesta a las peticiones dadas al Concilio Misionero Femenil de las Asambleas de Dios por parte de jóvenes
+      cristianas. Estas mujeres jóvenes tenían el deseo de tener un grupo misionero en donde pudieran convivir,
+      encontrar amigas, crecer y desarrollarse en su vida espiritual y con base a las Sagradas Escrituras.</p>
+    <p class="section__p">Con el paso del tiempo, este ministerio se fue organizando en otros países de Lationamérica
+      así como en otros países del mundo.</p>
+  </section>
+
+  <!--PIÉ DE PÁGINA-->
+  <footer class="footer text-center">
+    <br>
+    <div>
+      <a class="btn btn-outline-light btn-social mx-1"
+        href="https://www.facebook.com/Misioneritas-Argentina-158161724336240" target="_blank"><img
+          src="../multimedia/fb_icon-icons.com_65434.png" alt="Facebook" width="40" height="40"></a>
+      <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/misioneritasarg/?hl=es-la"
+        target="_blank"><img src="../multimedia/instagram_f_icon-icons.com_65485.png" alt="Instagram" width="40"
+          height="40"></a>
+      <a class="btn btn-outline-light btn-social mx-1" href="mailto:misioneritasarg@gmail.com" target="_blank"><img
+          src="../multimedia/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="Email"
+          width="40" height="40"></a>
+    </div>
+    <br>
+    <h5 class="lead">Diseñado y Mantenido por: Maria Belen Rodriguez Schachtschneider</h5>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
