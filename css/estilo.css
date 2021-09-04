@@ -53,6 +53,15 @@
     font-family: Amaranth,sans-serif;   
 }
 
+.section {
+   
+    padding: 1vh;
+    background-color:rgb(154, 236, 219);
+    width: auto;
+    text-align: center;
+    font-style: normal;
+}
+
 .section__fotos:hover{
 
     transform: scale(1.5,1.5);
@@ -66,24 +75,24 @@
 }
 
 .fondo-fondo1{
-    background-image: url("/multimedia/LogoArcoIris2.jpg");
+    background-image: url("../multimedia/LogoArcoIris2.jpg");
 }
 
 .fondo-fondo2{
-    background-image: url("/multimedia/LogoRositas2.jpg");
+    background-image: url("../multimedia/LogoRositas2.jpg");
 }
 
 .fondo-fondo3{
-    background-image: url("/multimedia/LogoMargaritas2.jpg");
+    background-image: url("../multimedia/LogoMargaritas2.jpg");
 }
 .fondo-fondo4{
-    background-image: url("/multimedia/LogoEstrellas2.jpg");
+    background-image: url("../multimedia/LogoEstrellas2.jpg");
 }
 .fondo-fondo5{
-    background-image: url("/multimedia/LogoJVM2.jpg");
+    background-image: url("../multimedia/LogoJVM2.jpg");
 }
 .fondo-fondo6{
-    background-image: url("/multimedia/LogoSiervas2.jpg");
+    background-image: url("../multimedia/LogoSiervas2.jpg");
 }
 
 
