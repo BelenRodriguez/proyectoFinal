@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,400;1,700&family=Pattaya&display=swap');
+
+
+/*VARIABLES*/
+
+$fontcuerpo: Amaranth,sans-serif;
+$bgcolor:rgb(154, 236, 219);
+$centrado: center;
+
+/*RESETEO*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ENCABEZADO*/
+
+.navbar{
+
+    font-family: Pattaya,sans-serif;
+    font-size: 4vh;
+    
+    .nav-link {
+        transition: 1s;
+    }
+    
+    .nav-link:hover {
+        border-bottom: black solid 0.5vh;
+    }
+}
+
+/*BODY*/
+
+.section {
+
+    background-color: $bgcolor;
+    width: auto;
+    text-align: $centrado;
+    font-style: normal;
+
+    .display-1 {
+        font-family: $fontcuerpo;
+        text-align: $centrado;
+    }
+
+    .fondo {
+        min-height: 20rem;
+        background-size: cover;
+        background-position: $centrado;
+    }
+    
+    /*LISTAS*/
+    @each $fondo in fondo1, fondo2, fondo3, fondo4,fondo5,fondo6 {
+        .fondo-#{$fondo} { 
+              Background-image:  
+               url('../multimedia/#{$fondo}.jpg');
+         }
+     }
+}
+
+.h2 {
+    font-family: $fontcuerpo;
+    text-align: $centrado;
+}
+
+.lead {
+    font-family:$fontcuerpo;
+    text-align: $centrado;
+}
+
+.btn {
+    font-family: $fontcuerpo;
+}
+
+.h3 {
+    font-family: $fontcuerpo;
+}
+
+/*
+.container{
+    background-color: $bgcolor;
+    text-align: $centrado;
+}*/
+
+// Source mixin
+@mixin make-container() {
+
+    width: 100%;
+    background-color: $bgcolor;
+    text-align: $centrado;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  // Usage
+  .custom-container {
+    @include make-container();
+  }
+
+/*FORMULARIO*/
+.mb-3 {
+   
+    padding-top: 5vh;
+    background-color: $bgcolor;
+    text-align: $centrado;
+    font-family: $fontcuerpo;
+    padding-bottom: 5vh;
+}
+
+
+/*GALERIA*/
+.contenedor-galeria{
+
+    background-color: $bgcolor;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    
+    .fotos:hover{
+
+        filter: sepia(60%);
+    }
+
+    .borde {
+        border: solid rgb(18, 203, 196) 0.5vh;
+    }
+}
+
+
+/*PIÉ DE PÁGINA*/
+.footer {
+    padding:0.5rem;
+    background-color: rgb(18, 203, 196);
+    background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(18,203,196,0) 0%, rgba(154,236,219,1) 100%);
+}
