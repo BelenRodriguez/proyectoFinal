@@ -30,12 +30,18 @@ $centrado: center;
     }
 }
 
+.carrousel{
+    padding-top: 20vh;
+    background-color: rgb(18, 203, 196);
+}
+
 /*BODY*/
 
 .section {
 
     background-color: $bgcolor;
-    width: auto;
+    padding-top: 2vh;
+    width: 100%;
     text-align: $centrado;
     font-style: normal;
 
@@ -59,6 +65,12 @@ $centrado: center;
      }
 }
 
+.h1 {
+    font-family: $fontcuerpo;
+    text-align: $centrado;
+    font-size: 5vh;
+}
+
 .h2 {
     font-family: $fontcuerpo;
     text-align: $centrado;
@@ -76,27 +88,6 @@ $centrado: center;
 .h3 {
     font-family: $fontcuerpo;
 }
-
-/*
-.container{
-    background-color: $bgcolor;
-    text-align: $centrado;
-}*/
-
-// Source mixin
-@mixin make-container() {
-
-    width: 100%;
-    background-color: $bgcolor;
-    text-align: $centrado;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  // Usage
-  .custom-container {
-    @include make-container();
-  }
 
 /*FORMULARIO*/
 .mb-3 {

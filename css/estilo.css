@@ -15,10 +15,15 @@
   .navbar .nav-link:hover {
     border-bottom: black solid 0.5vh; }
 
+.carrousel {
+  padding-top: 20vh;
+  background-color: #12cbc4; }
+
 /*BODY*/
 .section {
   background-color: #9aecdb;
-  width: auto;
+  padding-top: 2vh;
+  width: 100%;
   text-align: center;
   font-style: normal;
   /*LISTAS*/ }
@@ -42,6 +47,11 @@
   .section .fondo-fondo6 {
     Background-image: url("../multimedia/fondo6.jpg"); }
 
+.h1 {
+  font-family: Amaranth, sans-serif;
+  text-align: center;
+  font-size: 5vh; }
+
 .h2 {
   font-family: Amaranth, sans-serif;
   text-align: center; }
@@ -55,18 +65,6 @@
 
 .h3 {
   font-family: Amaranth, sans-serif; }
-
-/*
-.container{
-    background-color: $bgcolor;
-    text-align: $centrado;
-}*/
-.custom-container {
-  width: 100%;
-  background-color: #9aecdb;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto; }
 
 /*FORMULARIO*/
 .mb-3 {

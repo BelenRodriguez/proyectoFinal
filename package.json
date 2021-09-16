@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BelenRodriguez/proyectoFinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BelenRodriguez/proyectoFinal/issues"
+  },
+  "homepage": "https://github.com/BelenRodriguez/proyectoFinal#readme",
   "description": ""
 }
