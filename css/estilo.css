@@ -22,12 +22,16 @@
 /*BODY*/
 .section {
   background-color: #9aecdb;
-  padding-top: 2vh;
+  padding-top: 12vh;
   width: 100%;
+  height: 320vh;
   text-align: center;
   font-style: normal;
   /*LISTAS*/ }
   .section .display-1 {
+    font-family: Amaranth, sans-serif;
+    text-align: center; }
+  .section .display-6 {
     font-family: Amaranth, sans-serif;
     text-align: center; }
   .section .fondo {
@@ -50,11 +54,13 @@
 .h1 {
   font-family: Amaranth, sans-serif;
   text-align: center;
-  font-size: 5vh; }
+  font-size: 7vh;
+  text-decoration: underline; }
 
 .h2 {
   font-family: Amaranth, sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-decoration: underline; }
 
 .lead {
   font-family: Amaranth, sans-serif;
@@ -66,7 +72,20 @@
 .h3 {
   font-family: Amaranth, sans-serif; }
 
+.list-items {
+  position: center;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-family: Amaranth, sans-serif;
+  font-size: 1.5rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #9aecdb; }
+
 /*FORMULARIO*/
+.container {
+  padding-top: 10vh; }
+
 .mb-3 {
   padding-top: 5vh;
   background-color: #9aecdb;
@@ -77,7 +96,7 @@
 /*GALERIA*/
 .contenedor-galeria {
   background-color: #9aecdb;
-  padding-top: 5vh;
+  padding-top: 12vh;
   padding-left: 5vh;
   padding-right: 5vh; }
   .contenedor-galeria .fotos:hover {
