@@ -42,7 +42,6 @@ $centrado: center;
     background-color: $bgcolor;
     padding-top: 12vh;
     width: 100%;
-    height: 320vh;
     text-align: $centrado;
     font-style: normal;
 
@@ -66,7 +65,7 @@ $centrado: center;
     @each $fondo in fondo1, fondo2, fondo3, fondo4,fondo5,fondo6 {
         .fondo-#{$fondo} { 
               Background-image:  
-               url('../multimedia/#{$fondo}.jpg');
+               url('../multimedia/#{$fondo}.png');
          }
      }
 }
