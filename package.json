@@ -1,5 +1,5 @@
 {
-  "name": "prueba",
+  "name": "misioneritasargentina",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,5 @@
     "url": "https://github.com/BelenRodriguez/proyectoFinal/issues"
   },
   "homepage": "https://github.com/BelenRodriguez/proyectoFinal#readme",
-  "description": ""
+  "description": "Página web Misioneritas Argentina"
 }
